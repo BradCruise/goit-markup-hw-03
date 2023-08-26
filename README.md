@@ -1,2 +1,2 @@
-# goit-markup-hw-03
-Started 08/25/23 at 2:50AM
+# goit-markup-hw-02
+hw#2 started 08/17/2023, started styling logo and nav 08/19/2023
