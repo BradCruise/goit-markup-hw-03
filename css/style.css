@@ -1,8 +1,9 @@
 * {
 
-        /* margin: 0;
-        padding: 0; */
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
+
 }
 
 :root {
@@ -20,21 +21,25 @@
 body {
 
         font-family: 'Roboto', sans-serif;
+
 }
 
 address {
 
         font-style: normal;
+
 }
 
 a {
 
         text-decoration: none;
+
 }
 
 li {
 
         list-style-type: none;
+
 }
 
 button {
@@ -48,28 +53,27 @@ button {
 .container {
 
         width: 1158px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        padding: 0 15px;
 
 }
 
 .header {
 
+        padding: 24px 0;
         width: 1158px;
-        height: 72px;
-
         margin: auto;
-        padding: 10px;
 
         border-bottom: 1px solid var(--cornflower);
         background: var(--white);
+
 }
 
 .header-logo {
 
         height: 24px;
-        align-items: center;
-        flex-shrink: 0;
+        width: 1158px;
+        padding-right: 76px;
 
         color: var(--navy-blue);
         font-family: 'Raleway';
@@ -79,8 +83,6 @@ button {
         letter-spacing: 0.54px;
         text-transform: uppercase;
         cursor: default;
-
-        margin-right: 76px;
 
 }
 
@@ -104,7 +106,6 @@ button {
 
 .nav-list {
 
-        
         color: var(--navy-blue);
         font-size: 16px;
         font-weight: 500;
@@ -116,7 +117,19 @@ button {
 .nav-list-item {
 
         display: inline-block;
-        margin-right: 40px;
+
+}
+
+.nav-list-item:first-child {
+
+        padding-right: 40px;
+
+}
+
+.nav-list-item:last-child {
+
+        padding-left: 40px;
+
 }
 
 .nav-link {
@@ -132,7 +145,6 @@ a.nav-link:hover {
         
 }
 
-
 .address {
 
         color: var(--slate);
@@ -140,9 +152,7 @@ a.nav-link:hover {
         line-height: 24px;
         letter-spacing: 0.32px;
         
-        display: inline-block;
-        margin-left: 170px;
-        padding: 0;
+        display: inline-flex;
         
 }
 
@@ -152,9 +162,13 @@ a.nav-link:hover {
         color: var(--slate);
         display: inline-block;
 
-        /* margin-right: 40px; */
-        margin-left: 40px;
-      
+}
+
+.address-list-item:first-child {
+
+        padding-right: 40px;
+        padding-left: 315px;
+        
 }
 
 .address-link {
@@ -168,7 +182,7 @@ a.address-link:hover {
 
         color: var(--ocean);
 
-    }
+}
 
 .hero {
 
@@ -193,11 +207,11 @@ a.address-link:hover {
         margin: auto;
         padding-top: 188px;
         padding-bottom: 48px;
+        
 }
 
 .hero-button {
 
-     
         color: var(--white);
         background: var(--iris);
         
@@ -208,7 +222,6 @@ a.address-link:hover {
 
         border-radius: 4px;
         padding: 16px 32px;
-        gap: 10px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         
 }
@@ -219,23 +232,34 @@ a.address-link:hover {
         border-radius: 4px;
         background: var(--ocean, #404BBF);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
 
-.features-list {
-
-        padding: 0;
-        margin: 0;
-        
 }
 
 .features-item {
 
         display: inline-block;
 
-        margin-right: 24px;
         padding-top: 120px;
         padding-bottom: 120px;
         
+}
+
+.features-item:first-child {
+
+        padding-right: 24px;
+
+}
+
+.features-item:last-child {
+
+        padding-left: 24px;
+
+}
+
+.features-item:nth-child(3) {
+
+        padding-left: 24px;
+
 }
 
 .features-item-title {
@@ -245,6 +269,8 @@ a.address-link:hover {
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.4px;
+
+        padding-bottom: 8px;
         
 }
 
@@ -265,14 +291,13 @@ a.address-link:hover {
         line-height: 40px;
         letter-spacing: 0.72px;
 
-        margin: 0;
         padding-bottom: 72px;
+
 }
 
 .services-item {
 
-        margin: 0;
-        padding: 0;
+        display: flex;
         padding-bottom: 120px;
 
 }
@@ -280,7 +305,18 @@ a.address-link:hover {
 .services-item-image {
 
         display: inline-block;
-        margin-right: 20px;
+
+}
+
+.services-item-image:first-child {
+
+        padding-right: 24px;
+
+}
+
+.services-item-image:last-child {
+
+        padding-left: 24px;
 
 }
 
@@ -290,6 +326,7 @@ a.address-link:hover {
 
         width: 1158px;
         margin: auto;
+        
 }
 
 .team-title {
@@ -300,27 +337,27 @@ a.address-link:hover {
         line-height: 40px;
         letter-spacing: 0.72px;
 
-        margin: 0;
         padding-top: 120px;
         padding-bottom: 72px;
 }
 
 .team-list {
 
-        padding: 0;
-        margin: 0;
+        display: flex;
         padding-bottom: 120px;
 }
 
 .team-list-item {
 
         display: inline-block;
+        margin-right: 24px;
 
-        margin-right: 20px;
+        padding-bottom: 0px;
 
         border-radius: 0px 0px 4px 4px;
         background: var(--WHITE, #FFF);
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+        
 }
 
 .team-name {
@@ -332,9 +369,9 @@ a.address-link:hover {
         line-height: 24px;
         letter-spacing: 0.4px;
 
-        margin: 0;
         padding-top: 32px;
         padding-bottom: 8px;
+
 }
 
 .team-jobs {
@@ -345,26 +382,24 @@ a.address-link:hover {
         line-height: 24px;
         letter-spacing: 0.32px;
 
-        margin: 0;
         padding-bottom: 32px;
 }
 
 
-footer {
+.footer {
 
         background: var(--navy-blue);
 
         width: 1158px;
         margin: auto;
-}
 
+}
 
 .footer-logo {
 
         display: inline-flex;
         height: 24px;
         align-items: center;
-        flex-shrink: 0;
 
         color: var(--cloud);
         width: 71px;
@@ -376,7 +411,9 @@ footer {
         text-transform: uppercase;
         cursor: default;
 
-        padding-top: 100px;
+        padding-top: 101.5px;
+        padding-bottom: 17.5px;
+
 }
 
 .footer-description {
@@ -386,15 +423,40 @@ footer {
         line-height: 24px;
         letter-spacing: 0.32px;
 
-        margin: 0;
         padding-bottom: 100px;
+
 }
 
+.filters-list {
+
+
+        padding-top: 96px;
+        padding-bottom: 72px;
+        padding-left: 271px;
+
+}
+
+.filters-item {
+
+        display: inline-block;
+}
+
+
+.filters-item:nth-child(2) {
+
+        margin: 0 24px;
+
+}
+
+.filters-item:nth-child(4) {
+
+        margin: 0 24px;
+
+}
 
 .filters-item-button {
 
         color: var(--iris);
-        text-align: center;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
@@ -405,10 +467,9 @@ footer {
         background: var(--cloud);
 
         padding: 12px 24px;
-        justify-content: center;
-        align-items: center;
 
         cursor: pointer;
+
 }
 
 .filters-item-button:hover {
@@ -421,6 +482,24 @@ footer {
 
 }
 
+.projects {
+
+        width: 1158px;
+        margin: auto;
+
+        margin-bottom: 120px;
+
+}
+
+.projects-list {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        
+}
+
 .projects-list-title {
 
         color: var(--navy-blue);
@@ -428,12 +507,69 @@ footer {
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.4px;
+
+        padding-top: 32px;
+        padding-bottom: 8px;
+        padding-left: 16px;
 }
 
 .projects-list-description {
 
-        color: var(--navy-blue);
+        color: var(--slate);
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.32px;
+
+        padding-left: 16px;
+        padding-bottom: 32px;
+
+}
+
+.projects-list-item1 {
+
+        display: inline-block;
+
+        margin-bottom: 48px;
+
+        background: var(--WHITE, #FFF);
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
+.projects-list-item1:nth-child(2) {
+
+        margin: 0 24px;
+        margin-bottom: 48px;
+}
+
+.projects-list-item2 {
+
+        display: inline-block;
+
+        margin-bottom: 48px;
+
+        background: var(--WHITE, #FFF);
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
+.projects-list-item2:nth-child(5) {
+
+        margin: 0 24px;
+        margin-bottom: 48px;
+}
+
+.projects-list-item3 {
+
+        display: inline-block;
+
+        background: var(--WHITE, #FFF);
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
+.projects-list-item3:nth-child(8) {
+
+        margin: 0 24px;
+
 }
