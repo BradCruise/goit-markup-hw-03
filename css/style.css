@@ -54,15 +54,12 @@ button {
 
         width: 1158px;
         margin: 0 auto;
-        padding: 0 15px;
 
 }
 
 .header {
 
-        padding: 24px 0;
-        width: 1158px;
-        margin: auto;
+        padding: 24px ;
 
         border-bottom: 1px solid var(--cornflower);
         background: var(--white);
@@ -71,9 +68,7 @@ button {
 
 .header-logo {
 
-        height: 24px;
-        width: 1158px;
-        padding-right: 76px;
+        margin-right: 76px;
 
         color: var(--navy-blue);
         font-family: 'Raleway';
@@ -106,29 +101,14 @@ button {
 
 .nav-list {
 
+        display: flex;
+        gap: 40px;
+
         color: var(--navy-blue);
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.32px;
-
-}
-
-.nav-list-item {
-
-        display: inline-block;
-
-}
-
-.nav-list-item:first-child {
-
-        padding-right: 40px;
-
-}
-
-.nav-list-item:last-child {
-
-        padding-left: 40px;
 
 }
 
@@ -156,19 +136,19 @@ a.nav-link:hover {
         
 }
 
+.address-list {
+
+        display: flex;
+        gap: 40px;
+        margin-left: 332px;
+}
+
 
 .address-list-item {
 
         color: var(--slate);
         display: inline-block;
 
-}
-
-.address-list-item:first-child {
-
-        padding-right: 40px;
-        padding-left: 315px;
-        
 }
 
 .address-link {
@@ -187,12 +167,8 @@ a.address-link:hover {
 .hero {
 
         background: var(--navy-blue);
-        width: 1158px;
-        height: 600px;
-
         text-align: center;
-
-        margin: auto;
+        padding: 188px 0;
         
 }
 
@@ -204,9 +180,7 @@ a.address-link:hover {
         line-height: 60px;
         letter-spacing: 1.12px;
 
-        margin: auto;
-        padding-top: 188px;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
         
 }
 
@@ -235,31 +209,16 @@ a.address-link:hover {
 
 }
 
-.features-item {
+.features {
 
-        display: inline-block;
-
-        padding-top: 120px;
-        padding-bottom: 120px;
-        
+        padding: 120px 0;
 }
 
-.features-item:first-child {
+.features-list {
 
-        padding-right: 24px;
-
-}
-
-.features-item:last-child {
-
-        padding-left: 24px;
-
-}
-
-.features-item:nth-child(3) {
-
-        padding-left: 24px;
-
+        display: flex;
+        gap: 40px;
+        justify-content: center;
 }
 
 .features-item-title {
@@ -270,7 +229,7 @@ a.address-link:hover {
         line-height: 24px;
         letter-spacing: 0.4px;
 
-        padding-bottom: 8px;
+        margin-bottom: 8px;
         
 }
 
@@ -281,6 +240,11 @@ a.address-link:hover {
         line-height: 24px;
         letter-spacing: 0.32px;
 
+}
+
+.services {
+
+        padding-bottom: 120px;
 }
 
 .services-title {
@@ -298,34 +262,16 @@ a.address-link:hover {
 .services-item {
 
         display: flex;
-        padding-bottom: 120px;
-
-}
-
-.services-item-image {
-
-        display: inline-block;
-
-}
-
-.services-item-image:first-child {
-
-        padding-right: 24px;
-
-}
-
-.services-item-image:last-child {
-
-        padding-left: 24px;
+        align-items: center;
+        gap: 24px;
+        justify-content: center;
 
 }
 
 .teams {
 
         background: var(--cloud);
-
-        width: 1158px;
-        margin: auto;
+        padding: 120px 0;
         
 }
 
@@ -337,26 +283,22 @@ a.address-link:hover {
         line-height: 40px;
         letter-spacing: 0.72px;
 
-        padding-top: 120px;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
 
 .team-list {
 
         display: flex;
-        padding-bottom: 120px;
+        justify-content: center;
+        gap: 24px;
 }
 
 .team-list-item {
 
-        display: inline-block;
-        margin-right: 24px;
-
-        padding-bottom: 0px;
-
         border-radius: 0px 0px 4px 4px;
         background: var(--WHITE, #FFF);
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+        
         
 }
 
@@ -370,7 +312,8 @@ a.address-link:hover {
         letter-spacing: 0.4px;
 
         padding-top: 32px;
-        padding-bottom: 8px;
+        
+        margin-bottom: 8px;
 
 }
 
@@ -389,20 +332,16 @@ a.address-link:hover {
 .footer {
 
         background: var(--navy-blue);
-
-        width: 1158px;
-        margin: auto;
+        padding: 100px 0;
 
 }
 
 .footer-logo {
 
         display: inline-flex;
-        height: 24px;
         align-items: center;
 
         color: var(--cloud);
-        width: 71px;
         font-family: 'Raleway';
         font-size: 18px;
         font-weight: 800;
@@ -410,9 +349,6 @@ a.address-link:hover {
         letter-spacing: 0.54px;
         text-transform: uppercase;
         cursor: default;
-
-        padding-top: 101.5px;
-        padding-bottom: 17.5px;
 
 }
 
@@ -423,35 +359,20 @@ a.address-link:hover {
         line-height: 24px;
         letter-spacing: 0.32px;
 
-        padding-bottom: 100px;
+}
+
+.filters {
+
+        padding-top: 96px;
+        padding-bottom: 72px;
 
 }
 
 .filters-list {
 
-
-        padding-top: 96px;
-        padding-bottom: 72px;
-        padding-left: 271px;
-
-}
-
-.filters-item {
-
-        display: inline-block;
-}
-
-
-.filters-item:nth-child(2) {
-
-        margin: 0 24px;
-
-}
-
-.filters-item:nth-child(4) {
-
-        margin: 0 24px;
-
+        display: flex;
+        justify-content: center;
+        gap: 24px;
 }
 
 .filters-item-button {
@@ -484,11 +405,7 @@ a.address-link:hover {
 
 .projects {
 
-        width: 1158px;
-        margin: auto;
-
-        margin-bottom: 120px;
-
+        padding-bottom: 120px;
 }
 
 .projects-list {
@@ -496,8 +413,14 @@ a.address-link:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 48px 24px;
 
-        
+}
+
+.projects-list-item {
+
+        border: 1px solid var(--CORNFLOWER, #E7E9FC);
+        background: var(--WHITE, #FFF);
 }
 
 .projects-list-title {
@@ -509,8 +432,9 @@ a.address-link:hover {
         letter-spacing: 0.4px;
 
         padding-top: 32px;
-        padding-bottom: 8px;
         padding-left: 16px;
+
+        margin-bottom: 8px;
 }
 
 .projects-list-description {
@@ -520,56 +444,7 @@ a.address-link:hover {
         line-height: 24px;
         letter-spacing: 0.32px;
 
-        padding-left: 16px;
         padding-bottom: 32px;
-
-}
-
-.projects-list-item1 {
-
-        display: inline-block;
-
-        margin-bottom: 48px;
-
-        background: var(--WHITE, #FFF);
-        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
-}
-
-.projects-list-item1:nth-child(2) {
-
-        margin: 0 24px;
-        margin-bottom: 48px;
-}
-
-.projects-list-item2 {
-
-        display: inline-block;
-
-        margin-bottom: 48px;
-
-        background: var(--WHITE, #FFF);
-        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
-}
-
-.projects-list-item2:nth-child(5) {
-
-        margin: 0 24px;
-        margin-bottom: 48px;
-}
-
-.projects-list-item3 {
-
-        display: inline-block;
-
-        background: var(--WHITE, #FFF);
-        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
-}
-
-.projects-list-item3:nth-child(8) {
-
-        margin: 0 24px;
+        padding-left: 16px;
 
 }
